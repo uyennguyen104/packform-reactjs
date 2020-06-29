@@ -1,0 +1,53 @@
+@import "variables";
+
+.p-aside {
+  order: 0;
+  width: 100%;
+  margin-right: 0;
+  .p-nav {
+    padding-top: 0;
+    > ul {
+      > li {
+        padding: ($gutter/2) 0;
+        display: inline-block;
+        > a {
+          display: block;
+          color: $gray;
+          padding: 0 1.6rem;
+          border-left: 0.4rem solid transparent;
+          font-size: 1.6rem;
+          &:hover {
+            color: $gray-3;
+            text-decoration: none;
+            // font-family: $inter-medium;
+          }
+          &.active {
+            color: $gray-3;
+            border-left-color: $primary;
+            font-family: $inter-medium;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 576px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 992px) {
+    width: 28.4rem;
+    margin-right: $gutter;
+    .p-nav {
+      padding-top: $gutter;
+      > ul {
+        > li {
+          display: block;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}

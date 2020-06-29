@@ -1,0 +1,19 @@
+@import "variables";
+
+.p-page-wrap {
+  @include flex-direction(column);
+}
+
+.p-main-container {
+  order: 1;
+  flex: 1 1;
+  @include display-flex;
+  @include flex-direction(column);
+  .p-main {
+    flex: 1 1 100%;
+    padding: $gutter 3.2rem;
+    background-color: $white;
+    @include border-top-radius(.4rem);
+    @include box-shadow(0 3px 12px 0 rgba(0, 0, 0, 0.16));
+  }
+}

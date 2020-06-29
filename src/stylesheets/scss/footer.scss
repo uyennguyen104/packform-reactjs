@@ -1,0 +1,33 @@
+@import "variables";
+
+.p-footer {
+  padding: 1.6rem 3.2rem;
+  @include display-flex;
+  @include flex-direction(column);
+  @include align-items(flex-start);
+  @include justify-content(space-between);
+  color: $white;
+  background-color: $gray-3;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: $white;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @media screen and (min-width: 576px) {
+  }
+  @media screen and (min-width: 768px) {
+    @include flex-direction(row);
+    @include align-items(center);
+  }
+  @media screen and (min-width: 992px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
